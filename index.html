@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer=""></script>
+    <script src="https://kit.fontawesome.com/54d9a69f5d.js" crossorigin="anonymous"></script>
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="ttt">Tic Tac Toe</div>
+    <div class="container">
+
+        <div class="players">
+
+            <div class="p1">
+                <h1></h1>
+                <h2></h2>
+            </div>
+            <div class="p2">
+                <h1></h1>
+                <h2></h2>
+            </div>
+        </div>
+
+        <div class="start-game">
+            <input id= "player1" type="text" name="username" placeholder="Player_x">
+            <input id="player2" type="text" name="username" placeholder="Player_O">
+            <input id="numberofgames" type="number" placeholder="Number of Games">
+            <button class="startbtn">Start</button>
+        </div>
+
+        <!-- <div class="turn" id="turn">
+            Turn
+        </div> -->
+
+        <div class="undo">
+            <a class="undobtn" id="undoX">
+                <i class="fa-solid fa-rotate-left" id="x"></i>
+            </a>
+            <a class="undobtn" id="undoO">
+                <i class="fa-solid fa-rotate-left" id="o"></i>
+            </a>
+        </div>
+        <div id="gameboard">
+            <div class="box" id="0"></div>
+            <div class="box" id="1"></div>
+            <div class="box" id="2"></div>
+            <div class="box" id="3"></div>
+            <div class="box" id="4"></div>
+            <div class="box" id="5"></div>
+            <div class="box" id="6"></div>
+            <div class="box" id="7"></div>
+            <div class="box" id="8"></div>
+        </div>
+
+        <div class="modal " style = "background-color : rgba(20, 19, 19, 0.534); border-radius : 5%; color : white; height : 250px;  width : 645px; ">
+            <div class="content">
+                <h2 class="message">Congratulations Player X</h2>
+                <p>You've Won the Game  :)</p>
+                <button id="restartbtn">Restart</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

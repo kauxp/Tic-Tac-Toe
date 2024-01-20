@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>insertBefore Example</title>
+  <style>
+    .example-class {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="example-class">Element 1</div>
+  <div class="hehe">Element 2</div>
+  <div>Element 3</div>
+
+  <script>
+    // Create a new div element
+    var newElement = document.createElement('div');
+    newElement.textContent = 'New Element';
+
+    // Find the reference element (in this case, the element with class 'example-class' and text content 'Element 3')
+    var referenceElement = document.querySelector('.example-class');
+
+    // Get the parent node of the reference element
+    var parentNode = referenceElement.parentNode;
+
+    var hehenode = document.querySelector(".hehe");
+
+    // Insert the new element before the reference element
+    parentNode.insertBefore(newElement, hehenode);
+  </script>
+
+</body>
+</html>
